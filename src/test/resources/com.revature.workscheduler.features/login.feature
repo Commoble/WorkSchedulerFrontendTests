@@ -48,10 +48,12 @@ Feature: Logging in
 
   Scenario: Non-manager logs in
     Given Non-Manager user has logged in
-    Then Manager options are not present
+    Then User is on the main user control screen
+    And Manager options are not present
     #
 
   Scenario: Manager logs in
     Given Manager user has logged in
+    Then User is on the main user control screen
     Then Manager options are present
     #
