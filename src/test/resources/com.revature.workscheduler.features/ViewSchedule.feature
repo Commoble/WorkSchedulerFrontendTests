@@ -6,7 +6,6 @@ Feature: User Views Upcoming Schedule
     And User presses enter
     Then User is on the main user control screen
 
-  Scenario : User views the work schedule
-    Given User is on the main user control screen
+  Scenario: User views the work schedule
     When the user clicks the view schedule tab
     Then the users is on the work schedule page
