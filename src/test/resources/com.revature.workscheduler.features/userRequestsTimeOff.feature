@@ -7,11 +7,10 @@ Feature: User requests time off
     Then User is on the main user control screen
 
   Scenario: User views time off screen
-    Given User is on the main user control screen
     When User clicks the time off button
     Then User is on the time off screen
 
   Scenario: User requests time off
-    Given User is on the time off screen
+    When User clicks the time off button
     When User fills out the time off request form
-    Then The request is shown in pending requests
+    Then The request confirmation is shown
