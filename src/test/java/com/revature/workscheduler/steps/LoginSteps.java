@@ -117,10 +117,10 @@ public class LoginSteps
 	@Then("Manager options are not present")
 	public void managerOptionsAreNotPresent()
 	{
-		long managerButtons = WorkSchedulerRunner.DRIVER.findElements(By.tagName("button"))
+		long managerButtons = WorkSchedulerRunner.DRIVER.findElements(By.tagName("a"))
 			.stream()
 			.filter(element ->
-				element.getText().equals("Approve Time Off")
+				element.getText().equals("Approve Time-Off")
 				|| element.getText().equals("Create the Schedule")
 			)
 			.count();
@@ -130,10 +130,10 @@ public class LoginSteps
 	@Then("Manager options are present")
 	public void managerOptionsArePresent()
 	{
-		long managerButtons = WorkSchedulerRunner.DRIVER.findElements(By.tagName("button"))
+		long managerButtons = WorkSchedulerRunner.DRIVER.findElements(By.tagName("a"))
 			.stream()
 			.filter(element ->
-				element.getText().equals("Approve Time Off")
+				element.getText().equals("Approve Time-Off")
 					|| element.getText().equals("Create the Schedule")
 			)
 			.count();
